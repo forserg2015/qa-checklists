@@ -1,0 +1,20 @@
+Test Case ID,Title,Test Type,Precondition,Test Steps,Expected Result,Priority,Status,Comment
+TC01,Successful login with valid credentials,Functional,Login page is opened,"1. Open the login page
+2. Enter 'student' as username
+3. Enter 'Password123' as password
+4. Click Submit",User is redirected to a secure page with a success message,High,Not Executed,
+TC02,Login with incorrect password,Functional,Login page is opened,"1. Enter 'student'
+2. Enter 'wrongPassword'
+3. Click Submit",Error: 'Your password is invalid!',Medium,Not Executed,
+TC03,Login with incorrect username,Functional,Login page is opened,"1. Enter 'wrongUser'
+2. Enter 'Password123'
+3. Click Submit",Error: 'Your username is invalid!',Medium,Not Executed,
+TC04,Submit form with empty fields,Functional,Login page is opened,"1. Leave both fields empty
+2. Click Submit",Error message is shown or form submission is blocked,High,Not Executed,
+TC05,Check case sensitivity of login,Functional,Login page is opened,"1. Enter 'Student'
+2. Enter 'Password123'
+3. Click Submit",Error shown — login is case-sensitive,Medium,Not Executed,
+TC06,Check UI elements of login form,Functional,Login page is opened,"1. Check if login and password fields are displayed
+2. Check for placeholders
+3. Check if Submit button is enabled when fields are filled
+4. Check error message styles",All UI elements are displayed and function correctly,Low,Not Executed,
